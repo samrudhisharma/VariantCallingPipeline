@@ -84,12 +84,14 @@ nf_pipeline/
 │   └── variant_calling.nf
 └── workflows/
 └── workflow.nf
-
+```
 ## How to Run the Pipeline
 From the project directory:
+
 
 ```bash
 nextflow run main.nf
 nextflow run main.nf -resume
+
 
 
