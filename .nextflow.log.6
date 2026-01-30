@@ -1,0 +1,80 @@
+Jan-30 09:20:45.684 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume
+Jan-30 09:20:45.881 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.6
+Jan-30 09:20:45.909 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/samrudhi0409/.nextflow/plugins; core-plugins: nf-amazon@2.9.3,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.4,nf-tower@1.9.3,nf-wave@1.7.5
+Jan-30 09:20:45.944 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jan-30 09:20:45.949 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jan-30 09:20:45.956 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jan-30 09:20:45.994 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jan-30 09:20:46.031 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /mnt/c/nf_pipeline/nextflow.config
+Jan-30 09:20:46.035 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mnt/c/nf_pipeline/nextflow.config
+Jan-30 09:20:46.091 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/samrudhi0409/.nextflow/secrets/store.json
+Jan-30 09:20:46.099 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2a389173] - activable => nextflow.secret.LocalSecretsProvider@2a389173
+Jan-30 09:20:46.110 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jan-30 09:20:46.864 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jan-30 09:20:46.901 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [admiring_mandelbrot] DSL2 - revision: c0280c93a1
+Jan-30 09:20:46.904 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jan-30 09:20:46.905 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jan-30 09:20:47.022 [main] DEBUG nextflow.Session - Session UUID: 2bea289d-7d8b-4e40-9e31-3f98a4e71ad8
+Jan-30 09:20:47.023 [main] DEBUG nextflow.Session - Run name: admiring_mandelbrot
+Jan-30 09:20:47.025 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jan-30 09:20:47.045 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jan-30 09:20:47.059 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jan-30 09:20:47.116 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.6 build 5937
+  Created: 23-04-2025 16:53 UTC 
+  System: Linux 6.6.87.2-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 11.0.8-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 3370@LAPTOP-5K59UR82 [127.0.1.1]
+  CPUs: 16 - Mem: 7.7 GB (6.8 GB) - Swap: 2 GB (2 GB)
+Jan-30 09:20:47.226 [main] DEBUG nextflow.Session - Work-dir: /mnt/c/nf_pipeline/work [v9fs]
+Jan-30 09:20:47.228 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/c/nf_pipeline/bin
+Jan-30 09:20:47.246 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jan-30 09:20:47.261 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-30 09:20:47.302 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jan-30 09:20:47.324 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Jan-30 09:20:47.596 [main] DEBUG nextflow.Session - Session start
+Jan-30 09:20:47.825 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-30 09:20:48.559 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-30 09:20:48.560 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-30 09:20:48.574 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jan-30 09:20:48.593 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=7.7 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Jan-30 09:20:48.600 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jan-30 09:20:48.788 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-30 09:20:48.790 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-30 09:20:48.805 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-30 09:20:48.809 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-30 09:20:48.888 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-30 09:20:48.889 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-30 09:20:48.904 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC_RAW, FASTQC, QC_PIPELINE:FASTQC_TRIMMED, QC_PIPELINE:CUTADAPT, QC_PIPELINE:ALIGN_AND_SORT, CUTADAPT, FASTQC_TRIMMED, QC_PIPELINE:FASTQC_RAW, ALIGN_AND_SORT
+Jan-30 09:20:48.906 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+Jan-30 09:20:48.927 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC_PIPELINE:FASTQC_RAW
+Jan-30 09:20:48.930 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC_PIPELINE:CUTADAPT
+Jan-30 09:20:48.932 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC_PIPELINE:FASTQC_TRIMMED
+Jan-30 09:20:48.935 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC_PIPELINE:ALIGN_AND_SORT
+Jan-30 09:20:48.940 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_be88ebf6ea80a249: /mnt/c/nf_pipeline/./workflows/workflow.nf
+  Script_f2b04712cc317261: /mnt/c/nf_pipeline/main.nf
+  Script_bf623c69e3d4f09d: /mnt/c/nf_pipeline/./workflows/../modules/Alignment.nf
+  Script_79b442732c42fce3: /mnt/c/nf_pipeline/./workflows/../modules/cutadapt.nf
+  Script_dae7bc2314df0564: /mnt/c/nf_pipeline/./workflows/../modules/fastqc.nf
+Jan-30 09:20:48.941 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jan-30 09:20:48.942 [main] DEBUG nextflow.Session - Session await
+Jan-30 09:20:49.478 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [9a/1b24b6] Cached process > QC_PIPELINE:CUTADAPT (1)
+Jan-30 09:20:49.541 [Actor Thread 17] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /mnt/c/nf_pipeline/reference/chr22.fa -- Cause: java.nio.file.NoSuchFileException: /mnt/c/nf_pipeline/reference/chr22.fa
+Jan-30 09:20:49.561 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [5b/8c2d46] Cached process > QC_PIPELINE:FASTQC_RAW (1)
+Jan-30 09:20:49.651 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-30 09:20:49.657 [Task submitter] INFO  nextflow.Session - [44/98a26d] Submitted process > QC_PIPELINE:FASTQC_TRIMMED (1)
+Jan-30 09:20:49.680 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-30 09:20:49.682 [Task submitter] INFO  nextflow.Session - [be/feb2cc] Submitted process > QC_PIPELINE:ALIGN_AND_SORT (trimmed.fastq)
+Jan-30 09:20:49.798 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: QC_PIPELINE:ALIGN_AND_SORT (trimmed.fastq); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/nf_pipeline/work/be/feb2ccbcc98ea497df3b93e2400791]
+Jan-30 09:20:49.801 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jan-30 09:20:56.304 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: QC_PIPELINE:FASTQC_TRIMMED (1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/nf_pipeline/work/44/98a26d15ecde3e35aa352ecdb81e79]
+Jan-30 09:20:56.356 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jan-30 09:20:56.406 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jan-30 09:20:56.407 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jan-30 09:20:56.411 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jan-30 09:20:56.420 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=2; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=13.3s; failedDuration=0ms; cachedDuration=12.4s;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=4; peakMemory=4 GB; ]
+Jan-30 09:20:56.525 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jan-30 09:20:56.562 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jan-30 09:20:56.563 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

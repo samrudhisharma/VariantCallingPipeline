@@ -1,0 +1,45 @@
+# Nextflow work directory
+work/
+
+# Output/results folder
+results/
+output/
+
+# FASTQ files
+*.fastq
+*.fastq.gz
+
+# BAM/SAM/CRAM files
+*.bam
+*.bai
+*.sam
+
+# VCF files
+*.vcf
+*.vcf.gz
+
+# Reference files
+reference/*.fa
+reference/*.fai
+reference/*.fa.gz
+
+# FastQC HTML and zip reports
+*.html
+*.zip
+
+# Trimmed reads
+trimmed_reads/
+trimmed/*.fastq
+
+# Log files
+*.log
+
+# Conda or virtual environment folders
+env/
+.conda/
+.bnf/
+
+# IDE/editor files
+*.vscode/
+
+

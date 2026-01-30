@@ -1,0 +1,173 @@
+Jan-30 09:42:05.481 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume
+Jan-30 09:42:05.792 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.6
+Jan-30 09:42:05.833 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/samrudhi0409/.nextflow/plugins; core-plugins: nf-amazon@2.9.3,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.4,nf-tower@1.9.3,nf-wave@1.7.5
+Jan-30 09:42:05.874 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jan-30 09:42:05.880 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jan-30 09:42:05.886 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jan-30 09:42:05.937 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jan-30 09:42:05.996 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /mnt/c/nf_pipeline/nextflow.config
+Jan-30 09:42:06.001 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mnt/c/nf_pipeline/nextflow.config
+Jan-30 09:42:06.078 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/samrudhi0409/.nextflow/secrets/store.json
+Jan-30 09:42:06.087 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4ba89729] - activable => nextflow.secret.LocalSecretsProvider@4ba89729
+Jan-30 09:42:06.101 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jan-30 09:42:07.099 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jan-30 09:42:07.149 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [grave_maxwell] DSL2 - revision: c0280c93a1
+Jan-30 09:42:07.153 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jan-30 09:42:07.155 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jan-30 09:42:07.296 [main] DEBUG nextflow.Session - Session UUID: 2bea289d-7d8b-4e40-9e31-3f98a4e71ad8
+Jan-30 09:42:07.298 [main] DEBUG nextflow.Session - Run name: grave_maxwell
+Jan-30 09:42:07.300 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jan-30 09:42:07.324 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jan-30 09:42:07.343 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jan-30 09:42:07.407 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.6 build 5937
+  Created: 23-04-2025 16:53 UTC 
+  System: Linux 6.6.87.2-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 11.0.8-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 3785@LAPTOP-5K59UR82 [127.0.1.1]
+  CPUs: 16 - Mem: 7.7 GB (6.8 GB) - Swap: 2 GB (2 GB)
+Jan-30 09:42:07.539 [main] DEBUG nextflow.Session - Work-dir: /mnt/c/nf_pipeline/work [v9fs]
+Jan-30 09:42:07.541 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/c/nf_pipeline/bin
+Jan-30 09:42:07.561 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jan-30 09:42:07.582 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-30 09:42:07.641 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jan-30 09:42:07.677 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Jan-30 09:42:08.002 [main] DEBUG nextflow.Session - Session start
+Jan-30 09:42:08.361 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-30 09:42:09.183 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_9a8578dbe4da7516: /mnt/c/nf_pipeline/./workflows/../modules/alignment.nf
+  Script_f2b04712cc317261: /mnt/c/nf_pipeline/main.nf
+  Script_79b442732c42fce3: /mnt/c/nf_pipeline/./workflows/../modules/cutadapt.nf
+  Script_dae7bc2314df0564: /mnt/c/nf_pipeline/./workflows/../modules/fastqc.nf
+  Script_19e87a7b1df3e1dc: /mnt/c/nf_pipeline/./workflows/workflow.nf
+Jan-30 09:42:09.190 [main] DEBUG nextflow.Session - Session aborted -- Cause: Cannot find a component with name 'ALIGN_AND_SORT' in module: /mnt/c/nf_pipeline/./workflows/../modules/alignment.nf
+Jan-30 09:42:09.204 [main] DEBUG nextflow.Session - 
+Thread[Common-Cleaner,8,InnocuousThreadGroup]
+  java.base@11.0.8-internal/java.lang.Object.wait(Native Method)
+  java.base@11.0.8-internal/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+  java.base@11.0.8-internal/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+  java.base@11.0.8-internal/java.lang.Thread.run(Thread.java:834)
+  java.base@11.0.8-internal/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+Thread[Reference Handler,10,system]
+  java.base@11.0.8-internal/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+  java.base@11.0.8-internal/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+  java.base@11.0.8-internal/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+Thread[Finalizer,8,system]
+  java.base@11.0.8-internal/java.lang.Object.wait(Native Method)
+  java.base@11.0.8-internal/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+  java.base@11.0.8-internal/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+  java.base@11.0.8-internal/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+Thread[AnsiLogObserver,5,main]
+  java.base@11.0.8-internal/java.lang.Object.wait(Native Method)
+  app//nextflow.trace.AnsiLogObserver.render0(AnsiLogObserver.groovy:185)
+  java.base@11.0.8-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base@11.0.8-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base@11.0.8-internal/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base@11.0.8-internal/java.lang.reflect.Method.invoke(Method.java:566)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1017)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1207)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//groovy.lang.Closure.call(Closure.java:433)
+  app//groovy.lang.Closure.call(Closure.java:412)
+  app//groovy.lang.Closure.run(Closure.java:505)
+  java.base@11.0.8-internal/java.lang.Thread.run(Thread.java:834)
+
+Thread[Signal Dispatcher,9,system]
+
+Thread[Thread-1,5,main]
+  java.base@11.0.8-internal/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@11.0.8-internal/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+  java.base@11.0.8-internal/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+  java.base@11.0.8-internal/java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:513)
+  java.base@11.0.8-internal/java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:675)
+  app//nextflow.util.SimpleAgent.run(SimpleAgent.groovy:89)
+  java.base@11.0.8-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base@11.0.8-internal/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base@11.0.8-internal/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base@11.0.8-internal/java.lang.reflect.Method.invoke(Method.java:566)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1017)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1207)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//groovy.lang.Closure.call(Closure.java:433)
+  app//groovy.lang.Closure.call(Closure.java:412)
+  app//groovy.lang.Closure.run(Closure.java:505)
+  java.base@11.0.8-internal/java.lang.Thread.run(Thread.java:834)
+
+Thread[main,5,main]
+  java.base@11.0.8-internal/java.lang.Thread.dumpThreads(Native Method)
+  java.base@11.0.8-internal/java.lang.Thread.getAllStackTraces(Thread.java:1658)
+  app//nextflow.util.SysHelper.dumpThreads(SysHelper.groovy:188)
+  app//nextflow.Session.abort(Session.groovy:800)
+  app//nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:149)
+  app//nextflow.cli.CmdRun.run(CmdRun.groovy:376)
+  app//nextflow.cli.Launcher.run(Launcher.groovy:503)
+  app//nextflow.cli.Launcher.main(Launcher.groovy:658)
+
+Thread[process reaper,10,system]
+  java.base@11.0.8-internal/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@11.0.8-internal/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+  java.base@11.0.8-internal/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+  java.base@11.0.8-internal/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+  java.base@11.0.8-internal/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+  java.base@11.0.8-internal/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+  java.base@11.0.8-internal/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+  java.base@11.0.8-internal/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base@11.0.8-internal/java.lang.Thread.run(Thread.java:834)
+
+Jan-30 09:42:09.221 [main] ERROR nextflow.cli.Launcher - @unknown
+nextflow.exception.MissingModuleComponentException: Cannot find a component with name 'ALIGN_AND_SORT' in module: /mnt/c/nf_pipeline/./workflows/../modules/alignment.nf
+	at nextflow.script.ScriptMeta.addModule(ScriptMeta.groovy:302)
+	at nextflow.script.ScriptMeta.addModule(ScriptMeta.groovy:293)
+	at nextflow.script.IncludeDef.load0(IncludeDef.groovy:117)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_19e87a7b1df3e1dc.runScript(Script_19e87a7b1df3e1dc:4)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:159)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:209)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:236)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:222)
+	at nextflow.script.IncludeDef.memoizedMethodPriv$loadModule0PathMapSession(IncludeDef.groovy:142)
+	at nextflow.script.IncludeDef.access$0(IncludeDef.groovy)
+	at nextflow.script.IncludeDef$__clinit__closure2.doCall(IncludeDef.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:279)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.lambda$call$0(Memoize.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:113)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.call(Memoize.java:136)
+	at nextflow.script.IncludeDef.loadModule0(IncludeDef.groovy)
+	at nextflow.script.IncludeDef.load0(IncludeDef.groovy:114)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_f2b04712cc317261.runScript(Script_f2b04712cc317261:1)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:159)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:209)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:236)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:243)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:138)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:376)
+	at nextflow.cli.Launcher.run(Launcher.groovy:503)
+	at nextflow.cli.Launcher.main(Launcher.groovy:658)
