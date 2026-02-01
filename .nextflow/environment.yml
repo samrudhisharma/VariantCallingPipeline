@@ -1,0 +1,12 @@
+name: bnf
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - fastqc
+  - cutadapt
+  - bwa
+  - samtools
+  - bcftools
+  - openjdk
