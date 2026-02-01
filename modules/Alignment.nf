@@ -18,11 +18,11 @@ process ALIGN_AND_SORT {
     script:
     """
     # Align reads to reference genome using BWA-MEM
-    bwa mem $ref $fastq | \
-        samtools view -bS - | \
-        samtools sort -o ${fastq.baseName}.sorted.bam
+    ${params.bwa_bin} mem ${ref} ${fastq} | \
+        ${params.samtools_bin} view -bS - | \
+        ${params.samtools_bin} sort -o ${fastq.baseName}.sorted.bam
 
     # Index the sorted BAM file
-    samtools index ${fastq.baseName}.sorted.bam
+    ${params.samtools_bin} index ${fastq.baseName}.sorted.bam
     """
 }
