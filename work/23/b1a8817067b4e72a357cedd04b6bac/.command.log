@@ -1,0 +1,6 @@
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 18357 sequences (4106896 bp)...
+[M::mem_process_seqs] Processed 18357 reads in 2.568 CPU sec, 2.507 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem chr22.fa Sample_trimmed.fastq.gz
+[main] Real time: 3.981 sec; CPU: 2.888 sec

@@ -1,0 +1,114 @@
+Mar-22 19:19:33.179 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Mar-22 19:19:33.379 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.2
+Mar-22 19:19:33.434 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/samrudhi0409/.nextflow/plugins; core-plugins: nf-amazon@3.4.2,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.3,nf-k8s@1.2.2,nf-tower@1.17.3,nf-wave@1.16.1
+Mar-22 19:19:33.478 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-22 19:19:33.483 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-22 19:19:33.487 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Mar-22 19:19:33.515 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Mar-22 19:19:33.818 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-22 19:19:33.861 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /mnt/c/nextflow_pipeline/nextflow.config
+Mar-22 19:19:33.867 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mnt/c/nextflow_pipeline/nextflow.config
+Mar-22 19:19:33.918 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-22 19:19:34.591 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-22 19:19:34.592 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Mar-22 19:19:34.620 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/samrudhi0409/.nextflow/secrets/store.json
+Mar-22 19:19:34.624 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@36aa52d2] - activable => nextflow.secret.LocalSecretsProvider@36aa52d2
+Mar-22 19:19:34.644 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Mar-22 19:19:34.670 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [sad_majorana] DSL2 - revision: a9bbc7442e
+Mar-22 19:19:34.774 [main] DEBUG nextflow.Session - Session UUID: 065afac7-cbe8-4586-b69b-7e6c2a3c20ce
+Mar-22 19:19:34.775 [main] DEBUG nextflow.Session - Run name: sad_majorana
+Mar-22 19:19:34.777 [main] DEBUG nextflow.Session - Executor pool size: 16
+Mar-22 19:19:34.793 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Mar-22 19:19:34.803 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Mar-22 19:19:34.847 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.10.2 build 10555
+  Created: 28-11-2025 19:24 UTC 
+  System: Linux 6.6.87.2-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 21.0.10+7-Ubuntu-124.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 460@LAPTOP-5K59UR82 [127.0.1.1]
+  CPUs: 16 - Mem: 7.7 GB (6.5 GB) - Swap: 2 GB (2 GB)
+Mar-22 19:19:34.913 [main] DEBUG nextflow.Session - Work-dir: /mnt/c/nextflow_pipeline/work [v9fs]
+Mar-22 19:19:34.914 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/c/nextflow_pipeline/bin
+Mar-22 19:19:34.929 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-22 19:19:34.966 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Mar-22 19:19:34.971 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Mar-22 19:19:35.038 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-22 19:19:35.059 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Mar-22 19:19:35.241 [main] DEBUG nextflow.Session - Session start
+Mar-22 19:19:35.413 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-22 19:19:36.289 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Mar-22 19:19:36.291 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-22 19:19:36.310 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-22 19:19:36.327 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=7.7 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Mar-22 19:19:36.334 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Mar-22 19:19:36.381 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'QC_PIPELINE:FASTQC_RAW': maxForks=0; fair=false; array=0
+Mar-22 19:19:36.457 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Mar-22 19:19:36.457 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-22 19:19:36.461 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'QC_PIPELINE:CUTADAPT': maxForks=0; fair=false; array=0
+Mar-22 19:19:36.491 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Mar-22 19:19:36.492 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-22 19:19:36.495 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'QC_PIPELINE:FASTQC_TRIMMED': maxForks=0; fair=false; array=0
+Mar-22 19:19:36.504 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Mar-22 19:19:36.505 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-22 19:19:36.508 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'QC_PIPELINE:ALIGN': maxForks=0; fair=false; array=0
+Mar-22 19:19:36.517 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Mar-22 19:19:36.517 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-22 19:19:36.520 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'QC_PIPELINE:SAM_TO_BAM': maxForks=0; fair=false; array=0
+Mar-22 19:19:36.536 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Mar-22 19:19:36.537 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-22 19:19:36.539 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'QC_PIPELINE:SORT_BAM': maxForks=0; fair=false; array=0
+Mar-22 19:19:36.563 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Mar-22 19:19:36.565 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-22 19:19:36.567 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'QC_PIPELINE:VARIANT_CALLING': maxForks=0; fair=false; array=0
+Mar-22 19:19:36.574 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC_RAW, FASTQC, QC_PIPELINE:FASTQC_TRIMMED, QC_PIPELINE:CUTADAPT, QC_PIPELINE:VARIANT_CALLING, QC_PIPELINE:ALIGN, QC_PIPELINE:SAM_TO_BAM, SORT_BAM, CUTADAPT, VARIANT_CALLING, ALIGN, SAM_TO_BAM, FASTQC_TRIMMED, QC_PIPELINE:SORT_BAM, QC_PIPELINE:FASTQC_RAW
+Mar-22 19:19:36.579 [main] DEBUG nextflow.Session - Igniting dataflow network (9)
+Mar-22 19:19:36.595 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC_PIPELINE:FASTQC_RAW
+Mar-22 19:19:36.596 [PathVisitor-2] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: reference/; pattern: chr22.fa*; options: [:]
+Mar-22 19:19:36.597 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC_PIPELINE:CUTADAPT
+Mar-22 19:19:36.598 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC_PIPELINE:FASTQC_TRIMMED
+Mar-22 19:19:36.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC_PIPELINE:ALIGN
+Mar-22 19:19:36.606 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC_PIPELINE:SAM_TO_BAM
+Mar-22 19:19:36.607 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC_PIPELINE:SORT_BAM
+Mar-22 19:19:36.609 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC_PIPELINE:VARIANT_CALLING
+Mar-22 19:19:36.612 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_c4f50df6fea5e0f5: /mnt/c/nextflow_pipeline/main.nf
+  Script_39ecec7f0b3c1ff8: /mnt/c/nextflow_pipeline/modules/cutadapt.nf
+  Script_dd0828500623f7e1: /mnt/c/nextflow_pipeline/modules/fastqc.nf
+  Script_0188b6a039cfded3: /mnt/c/nextflow_pipeline/workflows/workflow.nf
+  Script_f1a0863d8ad83ecc: /mnt/c/nextflow_pipeline/modules/alignment.nf
+  Script_3cda19ffbbc5064e: /mnt/c/nextflow_pipeline/modules/Sort_bam.nf
+  Script_bb091e15b1919b32: /mnt/c/nextflow_pipeline/modules/variant_calling.nf
+  Script_e225823939163706: /mnt/c/nextflow_pipeline/modules/Sam_to_Bam.nf
+Mar-22 19:19:36.613 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Mar-22 19:19:36.620 [main] DEBUG nextflow.Session - Session await
+Mar-22 19:19:37.014 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-22 19:19:37.022 [Task submitter] INFO  nextflow.Session - [4f/6f16be] Submitted process > QC_PIPELINE:CUTADAPT (Sample)
+Mar-22 19:19:37.057 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-22 19:19:37.059 [Task submitter] INFO  nextflow.Session - [ba/7147d7] Submitted process > QC_PIPELINE:FASTQC_RAW (Sample)
+Mar-22 19:19:37.747 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: QC_PIPELINE:CUTADAPT (Sample); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/nextflow_pipeline/work/4f/6f16be7ecaf253bc0107db5ec1b0bf]
+Mar-22 19:19:37.749 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Mar-22 19:19:37.825 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-22 19:19:37.827 [Task submitter] INFO  nextflow.Session - [c6/2fa274] Submitted process > QC_PIPELINE:FASTQC_TRIMMED (Sample_trimmed)
+Mar-22 19:19:37.867 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-22 19:19:37.875 [Task submitter] INFO  nextflow.Session - [9a/db02dd] Submitted process > QC_PIPELINE:ALIGN (1)
+Mar-22 19:19:42.668 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: QC_PIPELINE:ALIGN (1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/nextflow_pipeline/work/9a/db02dd51a050b5ef017aca08da5b83]
+Mar-22 19:19:42.716 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-22 19:19:42.717 [Task submitter] INFO  nextflow.Session - [7d/f987fc] Submitted process > QC_PIPELINE:SAM_TO_BAM (Sample_trimmed.fastq)
+Mar-22 19:19:43.252 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: QC_PIPELINE:FASTQC_TRIMMED (Sample_trimmed); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/nextflow_pipeline/work/c6/2fa274f9e61b1aeda7e8bff8e6a34b]
+Mar-22 19:19:43.425 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: QC_PIPELINE:SAM_TO_BAM (Sample_trimmed.fastq); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/nextflow_pipeline/work/7d/f987fc787b4f24074806e35151e1fe]
+Mar-22 19:19:43.479 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-22 19:19:43.481 [Task submitter] INFO  nextflow.Session - [fa/e1af70] Submitted process > QC_PIPELINE:SORT_BAM (Sample_trimmed.fastq)
+Mar-22 19:19:43.500 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: QC_PIPELINE:FASTQC_RAW (Sample); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/nextflow_pipeline/work/ba/7147d72820e5f75ec8d0947bc4bcaf]
+Mar-22 19:19:43.866 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: QC_PIPELINE:SORT_BAM (Sample_trimmed.fastq); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/nextflow_pipeline/work/fa/e1af70894c0d09d6c093ef54586814]
+Mar-22 19:19:43.939 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-22 19:19:43.941 [Task submitter] INFO  nextflow.Session - [46/c04dad] Submitted process > QC_PIPELINE:VARIANT_CALLING (Sample_trimmed.fastq.sorted)
+Mar-22 19:19:45.726 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: QC_PIPELINE:VARIANT_CALLING (Sample_trimmed.fastq.sorted); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/nextflow_pipeline/work/46/c04dad9c8476c08ff9a2129f5b0f67]
+Mar-22 19:19:45.732 [main] DEBUG nextflow.Session - Session await > all processes finished
+Mar-22 19:19:45.827 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Mar-22 19:19:45.828 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-22 19:19:45.831 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Mar-22 19:19:45.842 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=7; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=20s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
+Mar-22 19:19:45.981 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar-22 19:19:46.020 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Mar-22 19:19:46.022 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
