@@ -1,3 +1,0 @@
-#!/bin/bash -ue
-# Your variant calling command here, e.g., bcftools or gatk
-# Example: samtools mpileup -f chr22.fa Sample_trimmed.fastq.sorted.bam ...
